@@ -25,8 +25,6 @@ public class TodoController {
         // 할 일 리스트 읽고 모델에 넣기
         List<Todo> list = service.list();
         model.addAttribute("todoList", list);
-
-
         return "home";
     }
 
